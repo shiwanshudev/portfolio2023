@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Quattrocento } from "next/font/google";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const quattrocento = Quattrocento({
@@ -23,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${quattrocento.className}`}>
-        {children}
+        <main className="bg-indigo-950 min-h-screen text-white">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
