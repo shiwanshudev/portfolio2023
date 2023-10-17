@@ -12,13 +12,13 @@ export default function Navbar() {
         onClick={() => setIsVisible((prev) => !prev)}
       >
         {isVisible ? (
-          <AiOutlineClose className="text-3xl cursor-pointer hover:text-indigo-300 m-5" />
+          <AiOutlineClose className="text-3xl cursor-pointer hover:text-indigo-300 m-5 animate-fade-in" />
         ) : (
-          <AiOutlineMenu className="text-3xl cursor-pointer hover:text-indigo-300 m-5" />
+          <AiOutlineMenu className="text-3xl cursor-pointer hover:text-indigo-300 m-5 animate-fade-in" />
         )}
       </div>
       {isVisible && (
-        <div className="flex flex-col items-center justify-center h-screen fixed w-screen bg-indigo-950 z-10">
+        <div className="flex flex-col items-center justify-center h-screen fixed w-screen bg-indigo-950 z-10 animate-slide-in">
           <Link
             onClick={() => setIsVisible(false)}
             href="/"
