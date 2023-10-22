@@ -1,7 +1,13 @@
 "use client";
+import { useState } from "react";
 export default function Contact() {
-  const handleSubmit = (e) => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(name, email, message);
   };
   return (
     <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20">
@@ -28,6 +34,8 @@ export default function Contact() {
               type="text"
               placeholder="Ram Kumar"
               className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
+              onChange={(e) => setName(e.target.value)}
+              name={name}
               required
             />
             <label
@@ -41,6 +49,8 @@ export default function Contact() {
               type="email"
               placeholder="ramkumar@abc.com"
               className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               required
             />
             <label
@@ -54,6 +64,8 @@ export default function Contact() {
               id="message"
               className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
               placeholder="Tell me a bit about yourself, your business, and how I can assist you..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
           </div>
