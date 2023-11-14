@@ -1,13 +1,29 @@
 "use client";
 import { useState } from "react";
+
 export default function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(name, email, message);
+    try {
+      const response = await fetch("/api/sheets", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await response.json();
+      if (data.response === 201) {
+        setIsDisabled(true);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20">
@@ -35,7 +51,7 @@ export default function Contact() {
               placeholder="Ram Kumar"
               className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
               onChange={(e) => setName(e.target.value)}
-              name={name}
+              value={name}
               required
             />
             <label
@@ -71,9 +87,10 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="border-indigo-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-indigo-800"
+            className="border-indigo-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-indigo-800 disabled:bg-green-700 disabled:border-none"
+            disabled={isDisabled}
           >
-            Send Message
+            {isDisabled ? "Successfully Submitted!" : "Send Message"}
           </button>
         </fieldset>
       </form>
