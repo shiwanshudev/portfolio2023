@@ -1,14 +1,20 @@
 "use client";
 import { useState } from "react";
+import { AiOutlineLoading } from "react-icons/ai";
 
 export default function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+  const [status, setStatus] = useState<string>("");
+
+  const LOADING = "LOADING";
+  const SUCCESS = "SUCCESS";
+  const ERROR = "ERROR";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus(LOADING);
     try {
       const response = await fetch("/api/sheets", {
         method: "POST",
@@ -19,9 +25,10 @@ export default function Contact() {
       });
       const data = await response.json();
       if (data.response === 201) {
-        setIsDisabled(true);
+        setStatus(SUCCESS);
       }
     } catch (error) {
+      setStatus(ERROR);
       console.error(error);
     }
   };
@@ -87,10 +94,16 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="border-indigo-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-indigo-800 disabled:bg-green-700 disabled:border-none"
-            disabled={isDisabled}
+            className="border-indigo-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-indigo-800 disabled:cursor-auto"
+            disabled={status === SUCCESS ? true : false}
           >
-            {isDisabled ? "Successfully Submitted!" : "Send Message"}
+            {status === SUCCESS ? (
+              <span className="text-green-500">Successfully Submitted!</span>
+            ) : status === LOADING ? (
+              <AiOutlineLoading className="animate-spin w-full text-center" />
+            ) : (
+              "Send Message"
+            )}
           </button>
         </fieldset>
       </form>
