@@ -14,8 +14,8 @@ export default function About() {
             target="_blank"
             className="outline-none"
           >
-            <div className="flex items-center justify-center bg-indigo-900 py-3 px-5 rounded-md flex-col duration-300 hover:bg-indigo-800 lg:flex-row">
-              <div className="w-full lg:w-3/12 h-28 relative lg:mr-5">
+            <div className="flex items-center justify-center bg-indigo-900 py-3 px-5 rounded-md flex-col duration-300 border-solid border border-indigo-500 hover:bg-indigo-800 mb-2 lg:flex-row">
+              <div className="w-full lg:w-3/12 h-52 lg:h-28 relative lg:mr-5">
                 <Image
                   src={"/images/project1.png"}
                   alt="Portfolio Website Project"
@@ -33,7 +33,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </Link>
+          </Link>{" "}
         </div>
       </section>
     </div>
