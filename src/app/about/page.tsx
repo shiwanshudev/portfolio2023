@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left">
       <section className="pt-20">
-        <h1 className="font-bold text-3xl border-b-2 border-solid border-indigo-900 lg:text-5xl">
+        <h1 className="font-bold text-3xl text-center  lg:text-4xl">
           Who am I?
         </h1>
         <p className=" leading-7 pt-5 text-base lg:text-lg">

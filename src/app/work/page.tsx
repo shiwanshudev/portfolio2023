@@ -5,17 +5,15 @@ export default function About() {
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left">
       <section className="pt-20">
-        <h1 className="font-bold text-3xl border-b-2 border-solid border-indigo-900 lg:text-5xl">
-          My Work
-        </h1>
+        <h1 className="font-bold text-3xl text-center lg:text-4xl">My Work</h1>
         <div className="pt-5 flex flex-col items-center justify-center">
           <Link
             href={"https://shiwanshu2023.vercel.app/"}
             target="_blank"
             className="outline-none"
           >
-            <div className="flex items-center justify-center bg-indigo-900 py-3 px-5 rounded-md flex-col duration-300 hover:bg-indigo-800 lg:flex-row">
-              <div className="w-full lg:w-3/12 h-28 relative lg:mr-5">
+            <div className="flex items-center justify-center bg-indigo-900 py-3 px-5 rounded-md flex-col duration-300 border-solid border border-indigo-500 hover:bg-indigo-800 mb-2 lg:flex-row">
+              <div className="w-full lg:w-3/12 h-52 lg:h-28 relative lg:mr-5">
                 <Image
                   src={"/images/project1.png"}
                   alt="Portfolio Website Project"
@@ -33,7 +31,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </Link>
+          </Link>{" "}
         </div>
       </section>
     </div>

@@ -34,7 +34,7 @@ export default function Contact() {
   };
   return (
     <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20">
-      <h1 className="font-bold text-3xl lg:text-5xl">
+      <h1 className="font-bold text-3xl lg:text-4xl">
         {"Care for some chit chat? :)"}
       </h1>
       <form
