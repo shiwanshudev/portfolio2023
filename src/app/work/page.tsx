@@ -5,9 +5,7 @@ export default function About() {
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left">
       <section className="pt-20">
-        <h1 className="font-bold text-3xl border-b-2 border-solid border-indigo-900 lg:text-5xl">
-          My Work
-        </h1>
+        <h1 className="font-bold text-3xl text-center lg:text-4xl">My Work</h1>
         <div className="pt-5 flex flex-col items-center justify-center">
           <Link
             href={"https://shiwanshu2023.vercel.app/"}
