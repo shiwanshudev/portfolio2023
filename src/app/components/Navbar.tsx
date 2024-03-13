@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import clsx from "clsx";
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,9 +17,12 @@ export default function Navbar() {
               setActive("");
             }}
             href="/"
-            className={`hover:text-indigo-500 duration-200 py-3 mr-8 ${
-              active === "" ? "text-white" : "text-indigo-400"
-            }`}
+            className={clsx(
+              "hover:text-indigo-500 duration-200 py-3 mr-8 text-indigo-400",
+              {
+                "text-white": active === "",
+              }
+            )}
           >
             Home
           </Link>
@@ -28,9 +32,12 @@ export default function Navbar() {
               setActive("about");
             }}
             href="/about"
-            className={`hover:text-indigo-500 duration-200 py-3 mr-8 ${
-              active === "about" ? "text-white" : "text-indigo-400"
-            }`}
+            className={clsx(
+              "hover:text-indigo-500 duration-200 py-3 mr-8 text-indigo-400",
+              {
+                "text-white": active === "about",
+              }
+            )}
           >
             About
           </Link>
@@ -40,9 +47,12 @@ export default function Navbar() {
               setActive("work");
             }}
             href="/work"
-            className={`hover:text-indigo-500 duration-200 py-3 mr-8 ${
-              active === "work" ? "text-white" : "text-indigo-400"
-            }`}
+            className={clsx(
+              "hover:text-indigo-500 duration-200 py-3 mr-8 text-indigo-400",
+              {
+                "text-white": active === "work",
+              }
+            )}
           >
             Work
           </Link>
@@ -52,9 +62,12 @@ export default function Navbar() {
               setActive("contact");
             }}
             href="/contact"
-            className={`hover:text-indigo-500 duration-200 py-3 mr-8 ${
-              active === "contact" ? "text-white" : "text-indigo-400"
-            }`}
+            className={clsx(
+              "hover:text-indigo-500 duration-200 py-3 mr-8 text-indigo-400",
+              {
+                "text-white": active === "contact",
+              }
+            )}
           >
             Contact Me
           </Link>
