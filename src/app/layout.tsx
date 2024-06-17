@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${quattrocento.className}`}>
-        <main className="bg-indigo-950 min-h-screen text-white">
+        <main className="bg-gradient-to-b from-indigo-950 to-purple-800 min-h-screen text-white">
           <Navbar />
           {children}
         </main>
