@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
-import { AiFillBehanceCircle, AiFillGithub, AiFillMail } from "react-icons/ai";
+import {
+  AiFillBehanceCircle,
+  AiFillGithub,
+  AiFillMail,
+  AiFillLinkedin,
+} from "react-icons/ai";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 
@@ -8,6 +13,7 @@ const SOCIAL_LINKS = {
   behance: "https://www.behance.net/sshubhamdesigns",
   github: "https://github.com/shiwanshudev",
   mail: "mailto:shiwanshudev@outlook.com",
+  linkedin: "https://in.linkedin.com/in/shiwanshudev",
 };
 
 export default function Home() {
@@ -44,6 +50,13 @@ export default function Home() {
             target="_blank"
           >
             <AiFillGithub />
+          </Link>
+          <Link
+            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
+            href={SOCIAL_LINKS.linkedin}
+            target="_blank"
+          >
+            <AiFillLinkedin />
           </Link>
           <Link
             className="text-white text-3xl hover:text-purple-500 duration-200"

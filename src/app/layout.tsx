@@ -11,7 +11,7 @@ const quattrocento = Quattrocento({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio 2023 - Shiwanshu",
+  title: "My Portfolio 2024 - Shiwanshu",
   description:
     "Experienced frontend developer and designer proficient in Figma, Adobe Photoshop, NextJS, ReactJS, Notion, Tailwind, and CSS3.",
 };
