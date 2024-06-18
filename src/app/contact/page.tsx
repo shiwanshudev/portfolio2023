@@ -42,13 +42,13 @@ export default function Contact() {
         className="pt-12 flex items-center justify-center"
       >
         <fieldset className="w-80">
-          <legend className="pb-2 text-xl text-indigo-200 font-bold uppercase">
+          <legend className="pb-2 text-xl text-purple-200 font-bold uppercase">
             Contact Form
           </legend>{" "}
           <div>
             <label
               htmlFor="name"
-              className="block text-left pb-1 text-indigo-200"
+              className="block text-left pb-1 text-purple-200"
             >
               Name<span className="text-red-500">*</span>
             </label>
@@ -56,14 +56,14 @@ export default function Contact() {
               id="name"
               type="text"
               placeholder="Ram Kumar"
-              className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
+              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
               onChange={(e) => setName(e.target.value)}
               value={name}
               required
             />
             <label
               htmlFor="email"
-              className="block text-left pb-1  mt-3 text-indigo-200"
+              className="block text-left pb-1  mt-3 text-purple-200"
             >
               Email<span className="text-red-500">*</span>
             </label>
@@ -71,21 +71,21 @@ export default function Contact() {
               id="email"
               type="email"
               placeholder="ramkumar@abc.com"
-              className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
+              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required
             />
             <label
               htmlFor="message"
-              className="block text-left pb-1  mt-3 text-indigo-200"
+              className="block text-left pb-1  mt-3 text-purple-200"
             >
               Message<span className="text-red-500">*</span>
             </label>
             <textarea
               cols={5}
               id="message"
-              className=" outline-none bg-indigo-900 rounded-sm px-2 py-2 placeholder-indigo-500 w-full"
+              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
               placeholder="Tell me a bit about yourself, your business, and how I can assist you..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -94,7 +94,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="border-indigo-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-indigo-800 disabled:cursor-auto"
+            className="border-purple-800 border-2 cursor-pointer border-solid  outline-none w-full py-3 mt-5 rounded-md hover:bg-purple-800 disabled:cursor-auto"
             disabled={status === SUCCESS ? true : false}
           >
             {status === SUCCESS ? (

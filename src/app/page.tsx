@@ -32,21 +32,21 @@ export default function Home() {
         </p>
         <div className="mt-5 flex justify-center lg:justify-start">
           <Link
-            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
+            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
             href={SOCIAL_LINKS.behance}
             target="_blank"
           >
             <AiFillBehanceCircle />
           </Link>
           <Link
-            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
+            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
             href={SOCIAL_LINKS.github}
             target="_blank"
           >
             <AiFillGithub />
           </Link>
           <Link
-            className="text-white text-3xl hover:text-indigo-500 duration-200"
+            className="text-white text-3xl hover:text-purple-500 duration-200"
             href={SOCIAL_LINKS.mail}
             target="_blank"
           >
