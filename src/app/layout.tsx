@@ -1,12 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Quattrocento } from "next/font/google";
+import { Prompt, Quattrocento } from "next/font/google";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
 const quattrocento = Quattrocento({
   weight: ["400", "700"],
   variable: "--font-quattrocento",
+  subsets: ["latin"],
+});
+
+const prompt = Prompt({
+  weight: ["900", "800", "700", "200", "100"],
+  variable: "--font-prompt",
   subsets: ["latin"],
 });
 
@@ -23,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${quattrocento.className}`}>
+      <body
+        className={`${quattrocento.variable} ${prompt.variable} font-quattrocento`}
+      >
         <main className="bg-gradient-to-b from-indigo-950 to-purple-800 min-h-screen text-white">
           <Navbar />
           {children}
