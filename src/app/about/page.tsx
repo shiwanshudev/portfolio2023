@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left">
       <section className="pt-20">
-        <h1 className="font-bold text-3xl text-center  lg:text-4xl">
+        <h1 className="font-bold text-3xl text-center  lg:text-4xl font-prompt">
           Who am I?
         </h1>
         <p className=" leading-7 pt-5 text-base lg:text-lg">
@@ -23,8 +23,10 @@ export default function About() {
       </section>
       <section className="pt-8">
         <h2 className="text-3xl font-bold">My Journey</h2>
-        <p className="pt-3 text-lg font-bold">Con10T Labs, Full Time</p>
-        <p className="text-purple-500 text-sm font-bold">
+        <p className="pt-3 text-lg font-bold font-prompt">
+          Con10T Labs, Full Time
+        </p>
+        <p className="text-purple-500 text-sm font-bold font-prompt">
           December 2022 - April 2024
         </p>
         <ul className="pt-5 list-disc">

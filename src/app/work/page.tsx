@@ -27,7 +27,9 @@ export default function About() {
   return (
     <div className="mx-auto container text-center px-5 lg:px-48">
       <section className="pt-20">
-        <h1 className="font-bold text-3xl text-center lg:text-4xl">My Work</h1>
+        <h1 className="font-bold text-3xl text-center lg:text-4xl font-prompt">
+          My Work
+        </h1>
         <div className="pt-5 flex items-center justify-center flex-col lg:flex-row flex-wrap">
           {WORK_LINKS.map((w) => (
             <Link href={w.link} key={w.link} target="_blank">
@@ -40,9 +42,14 @@ export default function About() {
                     className="object-cover rounded-t-md"
                   />
                 </div>
-                <p className="text-sm lg:text-base p-3 leading-7 bg-purple-800 text-purple-200 rounded-b-md w-full">
-                  {w.description}
-                </p>
+                <div className="w-full bg-gradient-to-tr from-purple-800 to-indigo-800">
+                  <h3 className="text-xs lg:text-sm pt-3 pb-1 px-3 font-bold w-full text-left font-prompt">
+                    {w.name}
+                  </h3>
+                  <p className="text-sm text-left px-3 pb-3 rounded-b-md w-full">
+                    {w.description}
+                  </p>
+                </div>
               </div>
             </Link>
           ))}

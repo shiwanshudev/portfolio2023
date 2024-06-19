@@ -34,7 +34,7 @@ export default function Contact() {
   };
   return (
     <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20">
-      <h1 className="font-bold text-3xl lg:text-4xl">
+      <h1 className="font-bold text-3xl lg:text-4xl font-prompt">
         {"Care for some chit chat? :)"}
       </h1>
       <form
@@ -42,8 +42,8 @@ export default function Contact() {
         className="pt-12 flex items-center justify-center"
       >
         <fieldset className="w-80">
-          <legend className="pb-2 text-xl text-purple-200 font-bold uppercase">
-            Contact Form
+          <legend className="pb-2 text-xl text-purple-200 font-prompt">
+            Schedule a call
           </legend>{" "}
           <div>
             <label
@@ -56,7 +56,7 @@ export default function Contact() {
               id="name"
               type="text"
               placeholder="Ram Kumar"
-              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
+              className=" outline-none bg-purple-900 rounded-md px-2 py-2 placeholder-purple-500 w-full"
               onChange={(e) => setName(e.target.value)}
               value={name}
               required
@@ -71,7 +71,7 @@ export default function Contact() {
               id="email"
               type="email"
               placeholder="ramkumar@abc.com"
-              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
+              className=" outline-none bg-purple-900 rounded-md px-2 py-2 placeholder-purple-500 w-full"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required
@@ -85,7 +85,7 @@ export default function Contact() {
             <textarea
               cols={5}
               id="message"
-              className=" outline-none bg-purple-900 rounded-sm px-2 py-2 placeholder-purple-500 w-full"
+              className=" outline-none bg-purple-900 rounded-md px-2 py-2 placeholder-purple-500 w-full"
               placeholder="Tell me a bit about yourself, your business, and how I can assist you..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}

@@ -31,6 +31,7 @@ module.exports = {
       },
       fontFamily: {
         quattrocento: ["var(--font-quattrocento)"],
+        prompt: ["var(--font-prompt)"],
       },
     },
   },

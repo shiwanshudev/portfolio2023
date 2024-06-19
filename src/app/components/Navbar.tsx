@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div>
       {!isVisible && (
-        <div className="hidden lg:flex items-center justify-center fixed z-30 px-48 w-full border-b border-solid border-purple-900 shadow-lg">
+        <div className="hidden lg:flex items-center justify-center fixed z-30 px-48 w-full border-b border-solid border-purple-900 shadow-lg font-prompt">
           <Link
             onClick={() => {
               setIsVisible(false);

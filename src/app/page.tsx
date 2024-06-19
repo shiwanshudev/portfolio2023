@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <section className="container h-screen mx-auto px-5 flex items-center justify-center lg:justify-around flex-col-reverse lg:flex-row lg:px-48">
       <div className="text-center lg:text-left lg:w-6/12">
-        <h1 className="font-bold text-3xl lg:text-6xl px-5 pb-2 lg:px-0 lg:pb-0 font-quattrocento">
+        <h1 className="font-bold text-3xl lg:text-6xl px-5 pb-2 lg:px-0 lg:pb-0 font-prompt">
           Hi! I&apos;m Shiwanshu!
         </h1>
-        <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 font-quattrocento text-purple-500">
+        <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 text-purple-500 font-prompt">
           <Typewriter
             options={{
               strings: ["Frontend Developer", "UI/UX Designer"],
@@ -32,7 +32,7 @@ export default function Home() {
             }}
           />
         </h3>
-        <p className="text-xl lg:text-xl pt-3 lg:pt-7 font-quattrocento">
+        <p className="text-xl lg:text-xl pt-3 lg:pt-5 font-quattrocento">
           I design and develop web applications, user interfaces, and graphic
           designs.
         </p>
