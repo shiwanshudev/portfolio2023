@@ -66,6 +66,14 @@ export default function Home() {
             <AiFillMail />
           </Link>
         </div>
+        <div>
+          <Link
+            href={"/work"}
+            className="border-solid border mt-5 p-2 text-white-800 font-prompt rounded-lg inline-block cursor-pointer bg-purple-800 text-white border-purple-800 hover:-translate-y-1 shadow-md duration-200 hover:shadow-none"
+          >
+            Explore Work
+          </Link>
+        </div>
       </div>
       <div className="w-48 h-48 mb-10 relative lg:w-72 lg:h-72 ">
         <Image
