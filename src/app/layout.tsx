@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Prompt, Quattrocento } from "next/font/google";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const quattrocento = Quattrocento({
   weight: ["400", "700"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <main className="bg-gradient-to-b from-indigo-950 to-purple-800 min-h-screen text-white">
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
