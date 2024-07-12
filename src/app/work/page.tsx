@@ -11,25 +11,18 @@ export default function About() {
       src: "/images/project2.png",
     },
     {
-      link: "https://todo-with-auth-six.vercel.app/",
-      name: "SecureTasks (Todo CRUD with Auth)",
-      description:
-        "React.js,Tailwind CSS, ExpressJS, NodeJS, Bcrypt, JWT, MongoDB",
-      src: "/images/project4.png",
-    },
-    {
       link: "https://www.figma.com/design/2Ng2OS9TLYmpsKuDmWG7KL/Shiwanshu---UI-Portfolio?node-id=0-1&t=cjeMhVM2WvBUFEyT-1",
       name: "Marketing Website Design",
       description: "Figma, Prototyping, Wireframing, UX/UI Design, User Story",
       src: "/images/project3.png",
     },
-    // {
-    //   link: "https://shiwanshudev.vercel.app/",
-    //   name: "Portfolio Website",
-    //   description:
-    //     "     NextJS, ReactJS, TailwindCSS, and incorporates the Google Sheets API.",
-    //   src: "/images/project1.png",
-    // },
+    {
+      link: "https://shiwanshudev.vercel.app/",
+      name: "Portfolio Website",
+      description:
+        "     NextJS, ReactJS, TailwindCSS, and incorporates the Google Sheets API.",
+      src: "/images/project1.png",
+    },
   ];
   return (
     <div className="mx-auto container text-center px-5 lg:px-48">
