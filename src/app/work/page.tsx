@@ -20,7 +20,7 @@ export default function About() {
       link: "https://shiwanshudev.vercel.app/",
       name: "Portfolio Website",
       description:
-        "     NextJS, ReactJS, TailwindCSS, and incorporates the Google Sheets API.",
+        "NextJS, ReactJS, TailwindCSS, and incorporates the Google Sheets API.",
       src: "/images/project1.png",
     },
   ];
