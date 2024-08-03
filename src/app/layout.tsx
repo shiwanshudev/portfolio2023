@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${quattrocento.variable} ${prompt.variable} font-quattrocento`}
       >
-        <main className="bg-gradient-to-b from-indigo-950 to-purple-800 min-h-screen text-white">
+        <main className="bg-gradient-to-b from-purple-950 to-purple-800 min-h-screen text-white">
           <Navbar />
           {children}
           <Footer />
