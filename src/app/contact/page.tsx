@@ -33,7 +33,7 @@ export default function Contact() {
     }
   };
   return (
-    <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20">
+    <div className="mx-auto container text-center px-5 pt-28 lg:px-48 lg:pt-20 animate-fade-in">
       <h1 className="font-bold text-3xl lg:text-4xl font-prompt">
         {"Care for some chit chat? :)"}
       </h1>

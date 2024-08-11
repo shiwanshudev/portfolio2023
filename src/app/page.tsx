@@ -18,7 +18,7 @@ const SOCIAL_LINKS = {
 
 export default function Home() {
   return (
-    <section className="container h-screen mx-auto px-5 flex items-center justify-center lg:justify-around flex-col-reverse lg:flex-row lg:px-48">
+    <section className="container h-screen mx-auto px-5 flex items-center justify-center lg:justify-around flex-col-reverse lg:flex-row lg:px-48 animate-fade-in">
       <div className="text-center lg:text-left lg:w-6/12">
         <h1 className="font-bold text-3xl lg:text-6xl px-5 pb-2 lg:px-0 lg:pb-0 font-prompt">
           Hi! I&apos;m Shiwanshu!

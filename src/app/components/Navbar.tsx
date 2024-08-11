@@ -61,6 +61,22 @@ export default function Navbar() {
               setIsVisible(false);
               setActive("contact");
             }}
+            href="https://shiwanshudev.hashnode.dev/"
+            target="_blank"
+            className={clsx(
+              "hover:text-purple-500 duration-200 py-3 mr-8 text-purple-400",
+              {
+                "text-white": active === "contact",
+              }
+            )}
+          >
+            Blogs
+          </Link>
+          <Link
+            onClick={() => {
+              setIsVisible(false);
+              setActive("contact");
+            }}
             href="/contact"
             className={clsx(
               "hover:text-purple-500 duration-200 py-3 mr-8 text-purple-400",

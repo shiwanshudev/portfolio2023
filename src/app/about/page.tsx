@@ -7,7 +7,7 @@ export default function About() {
     app: "https://play.google.com/store/apps/details?id=com.cap10",
   };
   return (
-    <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left">
+    <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left animate-fade-in">
       <section className="pt-20">
         <h1 className="font-bold text-3xl text-center  lg:text-4xl font-prompt">
           Who am I?
