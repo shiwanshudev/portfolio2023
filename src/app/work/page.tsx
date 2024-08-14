@@ -21,14 +21,14 @@ export default function About() {
       description:
         "Developed UI wireframes, and low-fidelity and high-fidelity prototypes for a marketing website. Collaborated closely with clients to gather requirements and delivered designs that met and exceeded client expectations.",
     },
-    // {
-    //   link: "https://todo-with-auth-six.vercel.app/",
-    //   name: "Secure Tasks",
-    //   technologies: "ReactJS, TailwindCSS, ExpressJS, MongoDB, JWT, Bcrypt",
-    //   src: "/images/project4.png",
-    //   description:
-    //     "Developed a notes application that allows users to register and log in to add, edit, and delete their tasks. This project helped me understand how data flows within a given context.",
-    // },
+    {
+      link: "https://todo-with-auth-six.vercel.app/",
+      name: "Secure Tasks",
+      technologies: "ReactJS, TailwindCSS, ExpressJS, MongoDB, JWT, Bcrypt",
+      src: "/images/project4.png",
+      description:
+        "Developed a notes application that allows users to register and log in to add, edit, and delete their tasks. This project helped me understand how data flows within a given context.",
+    },
     {
       link: "https://shiwanshudev.vercel.app/",
       name: "Portfolio Website",
