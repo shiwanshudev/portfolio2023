@@ -8,7 +8,7 @@ export default function About() {
   };
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 lg:text-left animate-fade-in">
-      <section className="pt-20">
+      <section className="pt-24">
         <h1 className="font-bold text-3xl text-center  lg:text-4xl font-prompt">
           Who am I?
         </h1>
@@ -26,14 +26,14 @@ export default function About() {
         <p className="pt-3 text-lg font-bold font-prompt">
           Con10T Labs, Full Time
         </p>
-        <p className="text-purple-500 text-sm font-bold font-prompt">
+        <p className="text-indigo-500 text-sm font-bold font-prompt">
           December 2022 - April 2024
         </p>
         <ul className="pt-5 list-disc">
           <li className="leading-7 text-base lg:text-lg mb-3">
             <Link
               href={CON10T_LINKS.website}
-              className="text-white hover:text-purple-500 duration-200 font-bold underline-offset-4 underline"
+              className="text-white hover:text-indigo-500 duration-200 font-bold underline-offset-4 underline"
             >
               Con10T Labs Website:{" "}
             </Link>
@@ -45,7 +45,7 @@ export default function About() {
           <li className="leading-7 text-base lg:text-lg mb-3">
             <Link
               href={CON10T_LINKS.app}
-              className="text-white hover:text-purple-500 duration-200 font-bold underline-offset-4 underline"
+              className="text-white hover:text-indigo-500 duration-200 font-bold underline-offset-4 underline"
             >
               CAP10 App:{" "}
             </Link>
@@ -55,7 +55,7 @@ export default function About() {
             experience.
           </li>
           <li className="leading-7 text-base lg:text-lg mb-3">
-            <span className="text-white hover:text-purple-500 duration-200 font-bold">
+            <span className="text-white hover:text-indigo-500 duration-200 font-bold">
               Admin Panel:{" "}
             </span>
             Designed and optimized admin panel using Next.js, Tailwind CSS,

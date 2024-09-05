@@ -1,48 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillSetting } from "react-icons/ai";
+import { WORK_LINKS } from "../../../utils/contstant";
 
 export default function About() {
-  const WORK_LINKS = [
-    {
-      link: "https://con10tlabs.com/",
-      name: "Con10T Labs Website",
-      technologies:
-        "Next.js, TSParticles,Tailwind CSS, Notion API, Zoho CRM & Desk APIs",
-      src: "/images/project2.png",
-      description:
-        "Website Development: Developed and maintained the company website using Next.js, TSParticles, and Tailwind CSS, with content integration from Notion. Enhanced customer relationship and support systems through Zoho CRM and Zoho Desk API integration.",
-    },
-    {
-      link: "https://www.figma.com/design/2Ng2OS9TLYmpsKuDmWG7KL/Shiwanshu---UI-Portfolio?node-id=0-1&t=cjeMhVM2WvBUFEyT-1",
-      name: "Marketing Website Design",
-      technologies: "Figma, Prototyping, Wireframing, UX/UI Design, User Story",
-      src: "/images/project3.png",
-      description:
-        "Developed UI wireframes, and low-fidelity and high-fidelity prototypes for a marketing website. Collaborated closely with clients to gather requirements and delivered designs that met and exceeded client expectations.",
-    },
-    {
-      link: "https://todo-with-auth-six.vercel.app/",
-      name: "Secure Tasks",
-      technologies: "ReactJS, TailwindCSS, ExpressJS, MongoDB, JWT, Bcrypt",
-      src: "/images/project4.png",
-      description:
-        "Developed a notes application that allows users to register and log in to add, edit, and delete their tasks. This project helped me understand how data flows within a given context.",
-    },
-    {
-      link: "https://shiwanshudev.vercel.app/",
-      name: "Portfolio Website",
-      technologies:
-        "NextJS, ReactJS, TailwindCSS, and incorporates the Google Sheets API.",
-      src: "/images/project1.png",
-      description:
-        "Redesigned my portfolio website loosely on Figma and then developed it using Next.js and Tailwind CSS. Additionally, I added a contact form with a Google Sheet as the backend. ",
-    },
-  ];
   return (
     <div className="mx-auto container text-center px-5 lg:px-48 animate-fade-in">
-      <section className="pt-20">
-        <h1 className="font-bold text-3xl text-center lg:text-4xl font-prompt">
+      <section className="pt-24">
+        <h1 className="font-bold text-3xl text-center lg:text-4xl font-prompt pb-5">
           My Work
         </h1>
         <div className="flex items-center justify-center gap-5 flex-wrap pb-20 pt-3 lg:flex-col">
@@ -57,14 +22,26 @@ export default function About() {
                     className="object-cover rounded-md lg:rounded-l-md lg:rounded-r-none"
                   />
                 </div>
-                <div className="bg-purple-950 rounded-b-md lg:rounded-r-md lg:rounded-l-none h-full lg:w-[800px]">
+                <div className="bg-indigo-800 rounded-b-md lg:rounded-r-md lg:rounded-l-none h-full lg:w-[800px]">
                   <h3 className="font-semibold font-prompt text-lg py-2 lg:text-left lg:px-5">
                     {w.name}
                   </h3>
-                  <p className="pb-5 px-5 lg:text-left">
-                    <AiFillSetting className="inline-block animate-spin" />{" "}
-                    <span className="lg:font-semibold">{w.technologies}</span>
-                    <span className="hidden lg:block">{w.description}</span>
+
+                  <div className="flex px-5">
+                    <AiFillSetting className="lg:inline-block animate-spin text-indigo-400 m-1 hidden" />{" "}
+                    <div className="flex flex-wrap gap-y-2 lg:pb-2">
+                      {w.technologies.map((tech) => (
+                        <span
+                          className="bg-indigo-400 font-semibold text-indigo-800 px-2 py-1 text-xs rounded-full mr-2"
+                          key={tech}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="pb-5 px-5 text-left pt-5 lg:pt-0">
+                    {w.description}
                   </p>
                 </div>
               </div>

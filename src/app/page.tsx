@@ -23,7 +23,7 @@ export default function Home() {
         <h1 className="font-bold text-3xl lg:text-6xl px-5 pb-2 lg:px-0 lg:pb-0 font-prompt">
           Hi! I&apos;m Shiwanshu!
         </h1>
-        <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 text-purple-500 font-prompt">
+        <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 text-indigo-500 font-prompt">
           <Typewriter
             options={{
               strings: ["Frontend Developer", "UI/UX Designer"],
@@ -38,28 +38,28 @@ export default function Home() {
         </p>
         <div className="mt-5 flex justify-center lg:justify-start">
           <Link
-            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
+            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
             href={SOCIAL_LINKS.behance}
             target="_blank"
           >
             <AiFillBehanceCircle />
           </Link>
           <Link
-            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
+            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
             href={SOCIAL_LINKS.github}
             target="_blank"
           >
             <AiFillGithub />
           </Link>
           <Link
-            className="text-white text-3xl hover:text-purple-500 duration-200 mr-3"
+            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
             href={SOCIAL_LINKS.linkedin}
             target="_blank"
           >
             <AiFillLinkedin />
           </Link>
           <Link
-            className="text-white text-3xl hover:text-purple-500 duration-200"
+            className="text-white text-3xl hover:text-indigo-500 duration-200"
             href={SOCIAL_LINKS.mail}
             target="_blank"
           >
@@ -69,7 +69,7 @@ export default function Home() {
         <div>
           <Link
             href={"/work"}
-            className="border-solid border mt-5 p-2 text-white-800 font-prompt rounded-lg inline-block cursor-pointer bg-purple-800 text-white border-purple-800 hover:-translate-y-1 shadow-md duration-200 hover:shadow-none"
+            className="border-solid border font-normal mt-5 p-2 text-white-800 font-prompt rounded-lg inline-block cursor-pointer bg-indigo-800 text-white border-indigo-800 hover:-translate-y-1 shadow-md duration-200 hover:shadow-none"
           >
             Explore Work
           </Link>

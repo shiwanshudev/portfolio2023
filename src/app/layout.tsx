@@ -11,7 +11,7 @@ const quattrocento = Quattrocento({
 });
 
 const prompt = Prompt({
-  weight: ["900", "800", "700", "200", "100"],
+  weight: ["900", "800", "500", "600", "700", "200", "400", "100"],
   variable: "--font-prompt",
   subsets: ["latin"],
 });
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${quattrocento.variable} ${prompt.variable} font-quattrocento`}
       >
-        <main className="bg-gradient-to-b from-purple-950 to-purple-800 min-h-screen text-white">
+        <main className="bg-gradient-to-b from-zinc-950 to-indigo-800 min-h-screen text-white">
           <Navbar />
           {children}
           <Footer />
