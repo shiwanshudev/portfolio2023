@@ -15,6 +15,21 @@ export const WORK_LINKS = [
       "Website Development: Developed and maintained the company website using Next.js, TSParticles, and Tailwind CSS, with content integration from Notion. Enhanced customer relationship and support systems through Zoho CRM and Zoho Desk API integration.",
   },
   {
+    link: "https://medicine-management-tau.vercel.app/",
+    name: "Medicine Management",
+    technologies: [
+      "NextJS",
+      "TailwindCSS",
+      "TypeScript",
+      "MongoDB",
+      "shadcn/ui",
+      "ReactFormHook",
+    ],
+    src: "/images/project4.png",
+    description:
+      "This project enhances medicine management, ensuring accurate records and timely updates. It also provided valuable experience in building full-stack apps using Next.js.",
+  },
+  {
     link: "https://aiplanet-dphi.vercel.app/",
     name: "AI Planet Website (Dphi)",
     technologies: [
@@ -28,7 +43,14 @@ export const WORK_LINKS = [
     description:
       "Website Development: Developed the frontend for a hackathon website as part of an assignment from AI Planet for the frontend developer position. I integrated Context API for managing filters, search functionality, and ensuring type safety. The website is fully responsive.",
   },
-
+  // {
+  //   link: "https://shiwanshudev.vercel.app/",
+  //   name: "Portfolio Website",
+  //   technologies: ["NextJS", "ReactJS", "TailwindCSS", "Google Sheets API"],
+  //   src: "/images/project1.png",
+  //   description:
+  //     "Redesigned my portfolio website loosely on Figma and then developed it using Next.js and Tailwind CSS. Additionally, I added a contact form with a Google Sheet as the backend. ",
+  // },
   {
     link: "https://todo-with-auth-six.vercel.app/",
     name: "Secure Tasks",
@@ -40,7 +62,7 @@ export const WORK_LINKS = [
       "JWT",
       "Bcrypt",
     ],
-    src: "/images/project4.png",
+    src: "/images/project6.png",
     description:
       "Developed a notes application that allows users to register and log in to add, edit, and delete their tasks. This project helped me understand how data flows within a given context.",
   },
@@ -57,13 +79,5 @@ export const WORK_LINKS = [
     src: "/images/project3.png",
     description:
       "Developed UI wireframes, and low-fidelity and high-fidelity prototypes for a marketing website. Collaborated closely with clients to gather requirements and delivered designs that met and exceeded client expectations.",
-  },
-  {
-    link: "https://shiwanshudev.vercel.app/",
-    name: "Portfolio Website",
-    technologies: ["NextJS", "ReactJS", "TailwindCSS", "Google Sheets API"],
-    src: "/images/project1.png",
-    description:
-      "Redesigned my portfolio website loosely on Figma and then developed it using Next.js and Tailwind CSS. Additionally, I added a contact form with a Google Sheet as the backend. ",
   },
 ];
