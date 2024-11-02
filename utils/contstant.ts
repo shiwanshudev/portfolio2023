@@ -2,6 +2,7 @@ export const WORK_LINKS = [
   {
     link: "https://con10tlabs.com/",
     name: "Con10T Labs Website",
+    github: "",
     technologies: [
       "Next.js",
       "TSParticles",
@@ -12,11 +13,12 @@ export const WORK_LINKS = [
     ],
     src: "/images/project2.png",
     description:
-      "Website Development: Developed and maintained the company website using Next.js, TSParticles, and Tailwind CSS, with content integration from Notion. Enhanced customer relationship and support systems through Zoho CRM and Zoho Desk API integration.",
+      "Developed and maintained the company website using Next.js, TSParticles, and Tailwind CSS, with content integration from Notion. Enhanced customer relationship and support systems through Zoho CRM and Zoho Desk API integration.",
   },
   {
     link: "https://medicine-management-tau.vercel.app/",
     name: "Medicine Management",
+    github: "https://github.com/shiwanshudev/medicine-management",
     technologies: [
       "NextJS",
       "TailwindCSS",
@@ -32,6 +34,7 @@ export const WORK_LINKS = [
   {
     link: "https://aiplanet-dphi.vercel.app/",
     name: "AI Planet Website (Dphi)",
+    github: "https://github.com/shiwanshudev/aiplanet_dphi",
     technologies: [
       "Next.js",
       "ContextAPI",
@@ -54,6 +57,7 @@ export const WORK_LINKS = [
   {
     link: "https://todo-with-auth-six.vercel.app/",
     name: "Secure Tasks",
+    github: "https://github.com/shiwanshudev/todo-with-auth",
     technologies: [
       "ReactJS",
       "TailwindCSS",
@@ -69,6 +73,7 @@ export const WORK_LINKS = [
   {
     link: "https://www.figma.com/design/2Ng2OS9TLYmpsKuDmWG7KL/Shiwanshu---UI-Portfolio?node-id=0-1&t=cjeMhVM2WvBUFEyT-1",
     name: "Marketing Website Design",
+    github: "",
     technologies: [
       "Figma",
       "Prototyping",
