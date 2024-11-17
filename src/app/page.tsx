@@ -5,6 +5,7 @@ import {
   AiFillGithub,
   AiFillMail,
   AiFillLinkedin,
+  AiFillTwitterSquare,
 } from "react-icons/ai";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
@@ -14,6 +15,7 @@ const SOCIAL_LINKS = {
   github: "https://github.com/shiwanshudev",
   mail: "mailto:shiwanshudev@outlook.com",
   linkedin: "https://in.linkedin.com/in/shiwanshudev",
+  x: "https://x.com/shiwanshudev",
 };
 
 export default function Home() {
@@ -57,6 +59,13 @@ export default function Home() {
             target="_blank"
           >
             <AiFillLinkedin />
+          </Link>
+          <Link
+            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
+            href={SOCIAL_LINKS.x}
+            target="_blank"
+          >
+            <AiFillTwitterSquare />
           </Link>
           <Link
             className="text-white text-3xl hover:text-indigo-500 duration-200"
