@@ -28,7 +28,7 @@ export default function Home() {
         <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 text-indigo-500 font-prompt">
           <Typewriter
             options={{
-              strings: ["Frontend Developer", "UI/UX Designer"],
+              strings: ["Developer", "Designer"],
               autoStart: true,
               loop: true,
             }}
