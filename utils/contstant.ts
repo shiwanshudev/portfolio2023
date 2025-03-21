@@ -18,6 +18,7 @@ export const WORK_LINKS = [
   {
     link: "https://posta-mu.vercel.app/",
     name: "Posta - Sticky Notes App",
+    github: "https://github.com/shiwanshudev/posta/",
     technologies: [
       "NodeJS",
       "PostgreSQL",
