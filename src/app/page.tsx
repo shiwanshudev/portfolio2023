@@ -11,11 +11,9 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 
 const SOCIAL_LINKS = {
-  behance: "https://www.behance.net/sshubhamdesigns",
   github: "https://github.com/shiwanshudev",
   mail: "mailto:shiwanshudev@outlook.com",
   linkedin: "https://in.linkedin.com/in/shiwanshudev",
-  x: "https://x.com/shiwanshudev",
 };
 
 export default function Home() {
@@ -28,7 +26,7 @@ export default function Home() {
         <h3 className="font-bold text-xl lg:text-4xl px-5 pb-2 lg:px-0 lg:pb-0 text-indigo-500 font-prompt">
           <Typewriter
             options={{
-              strings: ["Developer", "Designer"],
+              strings: ["Developer", "Data Professional"],
               autoStart: true,
               loop: true,
             }}
@@ -39,13 +37,6 @@ export default function Home() {
           designs.
         </p>
         <div className="mt-5 flex justify-center lg:justify-start">
-          <Link
-            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
-            href={SOCIAL_LINKS.behance}
-            target="_blank"
-          >
-            <AiFillBehanceCircle />
-          </Link>
           <Link
             className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
             href={SOCIAL_LINKS.github}
@@ -59,13 +50,6 @@ export default function Home() {
             target="_blank"
           >
             <AiFillLinkedin />
-          </Link>
-          <Link
-            className="text-white text-3xl hover:text-indigo-500 duration-200 mr-3"
-            href={SOCIAL_LINKS.x}
-            target="_blank"
-          >
-            <AiFillTwitterSquare />
           </Link>
           <Link
             className="text-white text-3xl hover:text-indigo-500 duration-200"
